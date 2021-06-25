@@ -2,7 +2,7 @@ backend:
   name: git-gateway
   branch: main
 media_folder: "public/assets/blog" 
-public_folder: "assets/blog" 
+public_folder: "/assets/blog" 
 collections:
   - name: "blog"
     label: "Blog"
@@ -12,6 +12,7 @@ collections:
     fields:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Description", name: "description", widget: "string"}
+      - {label: "Author", name: "author", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Tags", name: "tags", widget: "list", default: ["post"]}
       - {label: "Featured Image", name: "image", widget: "image"}
